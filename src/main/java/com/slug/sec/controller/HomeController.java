@@ -8,6 +8,16 @@ public class HomeController {
 
 	@GetMapping("/")
 	public String home() {
-		return "home.jsp";
+		return "home";
+	}
+	
+	@GetMapping("/login")
+	public String loginPage() {
+		return "login";
+	}
+	
+	@GetMapping("/logout-sucess")
+	public String logoutPage() {
+		return "logout";
 	}
 }
