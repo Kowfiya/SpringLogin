@@ -3,24 +3,94 @@
 <head>
 <meta charset="UTF-8" />
 <title>Login</title>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
 </head>
 <body>
 
-	<form action="login" method="post">
-		<table>
-			<tr>
-				<td>Usuario:</td>
-				<td><input type="text" name="username"></td>
-			</tr>
-			<tr>
-				<td>Contraseña:</td>
-				<td><input type="password" name="password"></td>
-			</tr>
-			<tr>
-				<td><input name="submit" type="submit" value="Enviar"></td>
-			</tr>
-		</table>
-	</form>
+	<div
+		class="container with-outline page-mineduc page-mineduc rounded-bottom cf">
+		<!-- <img class="logo-mineduc" src="img/logo-med.png"> -->
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<div class="userinfo">Conectado desde la IP : 10.100.17.6</div>
+			</div>
 
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<div
+					class="container-fluid content with-outline rounded-top rounded-bottom">
+					<form action="login" method="post">
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<h3 class="font-gob">Inicio de Sesión</h3>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<label for="usuario">Nombre de Usuario:</label> <input
+									type="text" class="form-control" id="usuario"
+									placeholder="Usuario" aria-describedby="basic-addon1"
+									name="username">
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<label for="password">Contraseña:</label> <input type="password"
+									class="form-control" id="password" placeholder="Contraseña"
+									aria-describedby="basic-addon1" name="password">
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-xs-10 col-xs-offset-1">
+								<p>
+									<input id="remember_session" name="remember_session"
+										type="checkbox"><span>&nbsp;No cerrar sesión</span>
+								</p>
+								<p>
+									<!-- <button type="button" class="btn btn-primary">
+									<span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;<span
+										class="font-gob">Ingresar</span>
+								</button> -->
+									<input name="submit" type="submit" value="Enviar" class="btn btn-primary">
+								</p>
+							</div>
+						</div>
+				</div>
+				</form>
+			</div>
+		</div>
+
+		<br> <br>
+		<div
+			class="container-fluid content with-outline rounded-top rounded-bottom">
+			<footer>
+				<br>
+				<hr class="line-separator red">
+				<address>
+					<p>
+						<strong>Ministerio de Educación de Chile</strong><br> <a
+							href="http://www.gob.cl"
+							title="Ir al portal del Gobierno de Chile">Gobierno de Chile</a><br>
+						Dirección: Av. Libertador Bernardo O'Higgins 1371. Teléfono +56 2
+						24066000<br> <span class="text-blue-light">Versión
+							1.1.0</span><br>
+					</p>
+				</address>
+			</footer>
+		</div>
+	</div>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+		integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+		crossorigin="anonymous"></script>
 </body>
 </html>
